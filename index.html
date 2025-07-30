@@ -2,175 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicular Roof Rack Compliance Implementation</title>
     <link rel="stylesheet" href="transport.css">
 </head>
 <body>
-<div class="container">
-    <div class="card-container">
-        <div class="front">
-            <div class="front-info">
-                <h3></h3>
-            </div>
-        </div>
-        <div class="back">
-            <div class="stripe"></div>
-            <div class="box"></div>
-        </div>
+    <header>
+        <img src="https://pbs.twimg.com/profile_images/1136375556818128896/_zZRK0J0_400x400.jpg" alt="Ogun State Logo" class="ogun-logo">
+        <h1>Ogun State Government</h1>
+        <h2>Ministry of Transportation</h2>
+        <h3>Vehicular Roof Rack Compliance Implementation Registration and Enforcement Scheme</h3>
+    </header>
+    
+    <main>
+        <section class="introduction">
+            <p>Welcome to the registration portal for the Vehicular Roof Rack Compliance Implementation Registration and Enforcement Scheme, supported by Ogun State Traffic Compliance and Enforcement (TRACE) Laws.</p>
+        </section>
+
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>This initiative aims to establish a Roof Rack/Carrier Permit system for vehicles in Ogun State to enhance road safety and ensure compliance with safety regulations.</p>
+        </section>
+
+        <section class="why-register">
+            <h2>Why Register?</h2>
+            <p>Registering your vehicle for a Roof Rack/Carrier Permit helps to:</p>
+            <ul>
+                <li>Improve road safety by adhering to safety standards.</li>
+                <li>Protect infrastructure by preventing damage from overloaded vehicles.</li>
+                <li>Support economic growth through compliance and enhanced transport governance.</li>
+            </ul>
+        </section>
+
+        <section class="registration-link">
+    <h2>Get Started</h2>
+    <p>Please fill out the registration form to ensure your vehicle meets the necessary safety standards.</p>
+    <div class="button-container">
+        <a href="transport.html" class="btn">Register Now</a>
     </div>
-    <br><br>
-
-    <form action="" onsubmit="return validateForm()">
-        <h3>Driver's Information</h3>
-        <div class="inputBox">
-            <span>First Name (as seen on license)</span>
-            <input type="text" name="firstName" required>
-        </div>
-        <div class="inputBox">
-            <span>Middle Name (as seen on license)</span>
-            <input type="text" name="middleName" required>
-        </div>
-        <div class="inputBox">
-            <span>Last Name (as seen on license)</span>
-            <input type="text" name="lastName" required>
-        </div>
-        <div class="inputBox">
-            <span>Date of Birth</span>
-            <input type="date" class="card-holder-input" name="dob" required>
-        </div>
-        <div class="inputBox">
-            <span>State of Origin</span>
-            <select name="stateOfOrigin" class="card-holder-input" required>
-                <option value="">Select a state</option>
-                <option value="Abia">Abia</option>
-                <option value="Adamawa">Adamawa</option>
-                <option value="Akwa Ibom">Akwa Ibom</option>
-                <option value="Anambra">Anambra</option>
-                <option value="Bauchi">Bauchi</option>
-                <option value="Bayelsa">Bayelsa</option>
-                <option value="Benue">Benue</option>
-                <option value="Borno">Borno</option>
-                <option value="Cross River">Cross River</option>
-                <option value="Delta">Delta</option>
-                <option value="Ebonyi">Ebonyi</option>
-                <option value="Edo">Edo</option>
-                <option value="Ekiti">Ekiti</option>
-                <option value="Enugu">Enugu</option>
-                <option value="Gombe">Gombe</option>
-                <option value="Imo">Imo</option>
-                <option value="Jigawa">Jigawa</option>
-                <option value="Kaduna">Kaduna</option>
-                <option value="Kano">Kano</option>
-                <option value="Katsina">Katsina</option>
-                <option value="Kebbi">Kebbi</option>
-                <option value="Kogi">Kogi</option>
-                <option value="Kwara">Kwara</option>
-                <option value="Lagos">Lagos</option>
-                <option value="Nasarawa">Nasarawa</option>
-                <option value="Niger">Niger</option>
-                <option value="Ogun">Ogun</option>
-                <option value="Ondo">Ondo</option>
-                <option value="Osun">Osun</option>
-                <option value="Oyo">Oyo</option>
-                <option value="Plateau">Plateau</option>
-                <option value="Rivers">Rivers</option>
-                <option value="Sokoto">Sokoto</option>
-                <option value="Taraba">Taraba</option>
-                <option value="Yobe">Yobe</option>
-                <option value="Zamfara">Zamfara</option>
-                <option value="FCT">FCT (Federal Capital Territory)</option>
-            </select>
-        </div>
-        <div class="inputBox">
-            <span>Residential Address</span>
-            <input type="text" class="card-holder-input" name="residence" required>
-        </div>
-        <div class="inputBox">
-            <span>License Number</span>
-            <input type="number" class="card-holder-input" name="license" required>
-        </div>
-        <div class="inputBox">
-            <span>Driver's Phone Number</span>
-            <input type="number" class="card-holder-input" name="phone" required>
-        </div>
-        <div class="inputBox">
-            <span>Upload Driver's Photo:</span>
-            <input type="file" name="driverPhoto" accept="image/*" required>
-        </div>
-        <br><br>
-
-        <h3>Vehicle Information</h3>
-        <div class="inputBox">
-            <span>Vehicle Type (e.g Sinotruk P300)</span>
-            <input type="text" name="model" required>
-        </div>
-        <div class="inputBox">
-            <span>Vehicle Plate Number</span>
-            <input type="text" name="plateNumber" pattern="[A-Za-z0-9]+" required>
-        </div>
-        <div class="inputBox">
-            <span>Vehicle Owner's Name</span>
-            <input type="text" name="ownerName" required>
-        </div>
-        <div class="inputBox">
-            <span>Owner's Phone Number (optional)</span>
-            <input type="tel" name="ownerPhone" >
-        </div>
-        <div class="inputBox">
-            <span>Vehicle Roof Rack Compliance Status</span>
-            <select name="roofRackCompliance" required>
-                <option value="">Select Status</option>
-                <option value="compliant">Compliant</option>
-                <option value="non-compliant">Non-Compliant</option>
-            </select>
-        </div>
-        <div class="inputBox">
-            <span>Upload Vehicle's Photo:</span>
-            <input type="file" name="vehiclePhoto" accept="image/*" required>
-        </div>
-        <br><br>
-
-        <h3>Payment Information</h3>
-        <div class="inputBox">
-            <span>Amount Paid</span>
-            <input type="number" name="amountPaid" required>
-        </div>
-        <div class="inputBox">
-            <span>Date of Payment</span>
-            <input type="date" name="dateOfPayment" required>
-        </div>
-        <div class="inputBox">
-            <span>RRR No / Receipt Number</span>
-            <input type="text" name="rrrNo" required>
-        </div>
-
-        <div class="submit">
-            <input type="submit" value="Submit" class="submit-btn">
-        </div>
-    </form>
-
-    <div class="footer-text">
-        <h3>@ 2024, Endorsed by Ogun State Traffic Compliance And Enforcement Corps</h3>
-        <img src="transport jpegs/trace image.jpg" alt="TRACE Logo" width="50px">
-    </div>
-</div>
-
-<script>
-    function validateForm() {
-        let form = document.forms[0];
-        let plateNumber = form['plateNumber'].value;
-
-        
-        if (!/^[A-Za-z0-9]+$/.test(plateNumber)) {
-            alert("Please enter a valid Vehicle Plate Number.");
-            return false;
-        }
-
-        alert("Form successfully submitted!");
-        return true;
-    }
-</script>
-
+</section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Ogun State Government | Ministry of Transportation. All rights reserved.</p>
+    </footer>
 </body>
 </html>
